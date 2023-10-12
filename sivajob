@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    
+    environment{
+        usrname="${params.username}"
+        pass="${params.password}"
+    }
+    
+ stages {
+     stage('User Creation'){
+         steps {
+             sh'''
+             sudo useradd "${usrname}"
+             echo "${pass}" | sudo passwd --stdin "${usrname}"
+             echo "User Created Successfully"
+             
+             '''
+         }
+     }
+ }
+    
+}
