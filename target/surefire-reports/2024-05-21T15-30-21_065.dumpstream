@@ -1,0 +1,5 @@
+# Created at 2024-05-21T15:30:22.215
+Boot Manifest-JAR contains absolute paths in classpath 'F:\Desktop ,linux ,aws,devops files\STARAGILE\devops practice\maven app\01-Maven-SA-App\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
